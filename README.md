@@ -1,6 +1,6 @@
 <p align="center" style="width: 100%"><img width="200" height="200" src="/images/golang.png" /></p>
 
-# Go Gateway Reverse Proxy
+# API Gateway
 
 Go-Lang Simple Gateway Reverse Proxy application, allowing to mask server/service reference and defining a streaming on demand. It's Token, TLS protected, however in this stage we recommend to use it in a private network.
 This server is provided of an automatic load balancer for all `Site` name overlapping configurations (Round-Robin). It's provided of customizable modules and expose an index server API to manage and provide metadata information.
@@ -320,7 +320,7 @@ It's possible define multiple OS gateway services, configured on different folde
 
 ## License
 
-Copyright (c) 2016-2017 [BuildIt, Inc.](http://buildit.digital)
+Copyright (c) 2016-2017 Fabrizio Torelli](https://www.linkedin.com/in/fabriziotorelli/)
 
 Licensed under the [MIT](/LICENSE) License (the "License");
 you may not use this file except in compliance with the License.
