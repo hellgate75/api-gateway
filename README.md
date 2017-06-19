@@ -219,11 +219,17 @@ Example :
 
 Go in you `GOPATH\src` folder and type :
 ```sh
- git clone https://github.com/fabriziotorelli-wipro/go-gateway-reverse.git gateway
-
+ git clone https://github.com/hellgate75/api-gateway.git gateway
 ```
 
 Project GO package folder name is `gateway`.
+
+Or :
+
+```sh
+ go get -u hellgate75/api-gateway
+```
+
 
 
 ## Build
