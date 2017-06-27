@@ -1,3 +1,5 @@
+<p align="left" style="width: 100%"><img src="https://travis-ci.org/hellgate75/api-gateway.svg?branch=1.0" />&nbsp;&nbsp;<a href="https://travis-ci.org/hellgate75/api-gateway">Build Status</a></p>
+
 <p align="center" style="width: 100%"><img width="200" height="200" src="/images/golang.png" /></p>
 
 # API Gateway
@@ -16,7 +18,7 @@ Define a simple reverse proxy enabled by reference label and triggering single o
 
 To compile and run this project you have to check availability of following software:
 * [Go](https://golang.org/dl/) (tested with version 1.8)
-* Any program (curl, wget) or Browser plugin (REST Easy, etc..) to test token http calls in HEAD space 
+* Any program (curl, wget) or Browser plugin (REST Easy, etc..) to test token http calls in HEAD space
 
 
 ## Architecture
@@ -79,7 +81,7 @@ Configuration descriptor (`indexservice.json`) :
 * "usetokenprotection": Flag defining the user to check in the request HEADs the `X-GATEWAY-TOKEN` tag
 * "securitytoken": Security Token recovered in Head Tag `X-GATEWAY-TOKEN`
 * "usetls": Enable/Disable SSL/TLS configuration for the  Gateway Index Server
-* "cacertificatefile": CA Certificate signer of X509 Certificate or empty for self-signed certs 
+* "cacertificatefile": CA Certificate signer of X509 Certificate or empty for self-signed certs
 * "tlsx509certificatefile": X509 Certificate full qualified file path
 * "tlsx509certificatekeyfile": Certificate Server Key full qualified file path
 
@@ -112,7 +114,7 @@ Configuration descriptor for any of the ports (`config.json`) :
 * "ipaddress": Host Name/IP Address used by Gateway Port Server or "" (for any address)
 * "port": Port Number used by Gateway Port Server (integer)
 * "apiurl": API URL Base Address
-* "concatenate": Flag defining if server should concatenate API and Call path and Query parameters 
+* "concatenate": Flag defining if server should concatenate API and Call path and Query parameters
 * "beforeapi": Concatenate call path and Query parameters before the API URL data
 * "servicefile": Full qualified path of JSON file containing Gateway Port Service data
 * "protocol": Protocol used for connecting the  Gateway Port Services
@@ -121,7 +123,7 @@ Configuration descriptor for any of the ports (`config.json`) :
 * "usetokenprotection": Flag defining the user to check in the request HEADs the `X-GATEWAY-TOKEN` tag
 * "securitytoken": Security Token recovered in Head Tag `X-GATEWAY-TOKEN`
 * "usetls": Enable/Disable SSL/TLS configuration for the  Gateway Port Server
-* "cacertificatefile": CA Certificate signer of X509 Certificate or empty for self-signed certs 
+* "cacertificatefile": CA Certificate signer of X509 Certificate or empty for self-signed certs
 * "tlsx509certificatefile": X509 Certificate full qualified file path
 * "tlsx509certificatekeyfile": Certificate Server Key full qualified file path
 
@@ -260,7 +262,7 @@ Alternatively you can execute following commands :
  * `go build --buildmode exe .` to create an executable command
 
 
-## Further test 
+## Further test
 
 You can access information on  Gateway Token protected ports using following command :
 
@@ -283,7 +285,7 @@ curl -i -H Accept:application/json -H X-GATEWAY-TOKEN:<YOUR-TOKEN-HERE> -X GET h
 ```sh
 # Key considerations for algorithm "RSA" ≥ 2048-bit
 openssl genrsa -out server.key 2048
-    
+
 # Key considerations for algorithm "ECDSA" ≥ secp384r1
 # List ECDSA the supported curves (openssl ecparam -list_curves)
 openssl ecparam -genkey -name secp384r1 -out server.key
@@ -313,7 +315,7 @@ The application provides a series of arguments as input:
 * `--ports-file` [file path] Alternatively you can define full qualified port services configuration file path
 * `--index-file` [file path] Alternatively you can define full qualified index service configuration file path
 
-The `--config-dir` and `--port-file`, `--index-file` are mutually exclusive options. 
+The `--config-dir` and `--port-file`, `--index-file` are mutually exclusive options.
 
 The first one define a folder containing following file:
 * `config.json`        Port Services configuration file
