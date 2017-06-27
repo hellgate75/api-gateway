@@ -4,5 +4,5 @@ go:
  - release
 
 script:
- - go build -v && go test -v -i gateway_test.go
- - go build --buildmode exe
+ - cp -Rf ../api-gateway ../../ && cd ../../api-gateway && go build -v && go test -v -i gateway_test.go
+ - cp -Rf ../api-gateway ../../ && cd ../../api-gateway && go build --buildmode exe
