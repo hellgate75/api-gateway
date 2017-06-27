@@ -1,7 +1,6 @@
 language: go
 go:
  - 1.8.1
- - stable
 
 script:
  - cp -Rf ../api-gateway ../../.. && cd ../../../api-gateway && go get github.com/stretchr/testify/assert && go build -v && go test -v -i gateway_test.go
