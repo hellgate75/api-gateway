@@ -328,7 +328,7 @@ It's possible define multiple OS gateway services, configured on different folde
 
 ## License
 
-Copyright (c) 2016-2017 Fabrizio Torelli](https://www.linkedin.com/in/fabriziotorelli/)
+Copyright (c) 2016-2017 [Fabrizio Torelli](https://www.linkedin.com/in/fabriziotorelli/)
 
 Licensed under the [LGPL](/LICENSE) License (the "License");
 you may not use this file except in compliance with the License.
