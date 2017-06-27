@@ -1,9 +1,7 @@
 language: go
 go:
  - 1.8.1
- - release
 
 script:
- - go test -v gateway_test.go
- - go build -v
- - go build --buildmode exe
+ - cp -Rf ../api-gateway ../../.. && cd ../../../api-gateway && go get github.com/stretchr/testify/assert && go build -v && go test -v -i gateway_test.go
+ - cp -Rf ../api-gateway ../../.. && cd ../../../api-gateway && go build --buildmode exe
