@@ -1,8 +1,8 @@
 package ifaces
 
 import (
-	"gateway/model"
-	"gateway/service"
+	"api-gateway/model"
+	"api-gateway/service"
 	"log"
 	"sync"
 )

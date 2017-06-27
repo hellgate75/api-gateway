@@ -3,7 +3,7 @@ package service
 import (
 	"encoding/json"
 	"fmt"
-	"gateway/model"
+	"api-gateway/model"
 	"html"
 	"log"
 	"net/http"

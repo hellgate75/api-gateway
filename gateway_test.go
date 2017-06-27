@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	"encoding/json"
-	"gateway/ifaces"
-	"gateway/model"
-	"gateway/test"
+	"api-gateway/ifaces"
+	"api-gateway/model"
+	"api-gateway/test"
 	"github.com/stretchr/testify/assert"
 	"net/http"
 	"crypto/tls"

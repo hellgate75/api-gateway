@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gateway/ifaces"
+	"api-gateway/ifaces"
 	"log"
 	"os"
 )
@@ -75,7 +75,7 @@ func CreateGateway(configFile string, indexFile string) ifaces.GateWay {
 }
 
 func PrintHelp() {
-	println("gateway [OPTIONS]")
+	println("api-gateway [OPTIONS]")
 	println("OPTIONS")
 	println("--help                   Show the command help")
 	println("--config-dir   [path]    Define the default configuration path (we assume as file names : config.json and indexservice.json)")

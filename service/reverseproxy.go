@@ -2,7 +2,7 @@ package service
 
 import (
 	"bytes"
-	"gateway/model"
+	"api-gateway/model"
 	"html"
 	"log"
 	"net"

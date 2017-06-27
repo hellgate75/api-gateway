@@ -2,7 +2,7 @@ package service
 
 import (
 	"fmt"
-	"gateway/model"
+	"api-gateway/model"
 	"log"
 	"net/http"
 	"sync"
