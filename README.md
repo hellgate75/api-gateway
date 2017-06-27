@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/hellgate75/api-gateway.svg?branch=1.0)](https://travis-ci.org/hellgate75/api-gateway)
+<p align="center" style="width: 100%"><img width="200" height="200" src="https://travis-ci.org/hellgate75/api-gateway.svg?branch=master" />&nbsp;&nbsp;[![Build Status](https://travis-ci.org/hellgate75/api-gateway.svg?branch=1.0)](https://travis-ci.org/hellgate75/api-gateway)</p>
 
 <p align="center" style="width: 100%"><img width="200" height="200" src="/images/golang.png" /></p>
 
