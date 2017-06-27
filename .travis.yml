@@ -4,5 +4,5 @@ go:
  - release
 
 script:
- - export GOROOT=../.. && go build -v && go test -v -i gateway_test.go
- - export GOROOT=../.. && go build --buildmode exe
+ - go build -v && go test -v -i gateway_test.go
+ - go build --buildmode exe
