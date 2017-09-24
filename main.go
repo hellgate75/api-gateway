@@ -1,7 +1,7 @@
 package main
 
 import (
-	"api-gateway/ifaces"
+	"github.com/hellgate75/api-gateway/ifaces"
 	"log"
 	"os"
 )

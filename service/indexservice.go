@@ -1,10 +1,12 @@
 package service
 
 import (
+	"crypto/tls"
+	"crypto/x509"
 	"encoding/json"
 	"fmt"
-	"api-gateway/model"
 	"html"
+	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
@@ -12,9 +14,8 @@ import (
 	"strings"
 	"sync"
 	"time"
-	"io/ioutil"
-	"crypto/x509"
-	"crypto/tls"
+
+	"github.com/hellgate75/api-gateway/model"
 )
 
 func FilterIndexConfigs(sites []model.Site) []model.Response {
@@ -167,8 +168,8 @@ func GateWayIndexServer(config model.IndexConfig, fileName string, waitGroup *sy
 				caCertPool := x509.NewCertPool()
 				caCertPool.AppendCertsFromPEM(caCert)
 				server.TLSConfig = &tls.Config{
-					RootCAs: caCertPool,
-					ClientAuth: tls.RequireAndVerifyClientCert,
+					RootCAs:                  caCertPool,
+					ClientAuth:               tls.RequireAndVerifyClientCert,
 					MinVersion:               tls.VersionTLS12,
 					CurvePreferences:         []tls.CurveID{tls.CurveP521, tls.CurveP384, tls.CurveP256},
 					PreferServerCipherSuites: true,
@@ -179,7 +180,7 @@ func GateWayIndexServer(config model.IndexConfig, fileName string, waitGroup *sy
 						tls.TLS_RSA_WITH_AES_256_CBC_SHA,
 					},
 				}
-				server.TLSNextProto= make(map[string]func(*http.Server, *tls.Conn, http.Handler), 0)
+				server.TLSNextProto = make(map[string]func(*http.Server, *tls.Conn, http.Handler), 0)
 			}
 			err = server.ListenAndServeTLS(config.X509CertFile, config.X509KeyFile)
 		} else {

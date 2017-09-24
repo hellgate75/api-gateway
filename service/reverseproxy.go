@@ -2,7 +2,7 @@ package service
 
 import (
 	"bytes"
-	"api-gateway/model"
+	"github.com/hellgate75/api-gateway/model"
 	"html"
 	"log"
 	"net"

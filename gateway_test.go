@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	"encoding/json"
-	"api-gateway/ifaces"
-	"api-gateway/model"
-	"api-gateway/test"
+	"github.com/hellgate75/api-gateway/ifaces"
+	"github.com/hellgate75/api-gateway/model"
+	"github.com/hellgate75/api-gateway/test"
 	"github.com/stretchr/testify/assert"
 	"net/http"
 	"crypto/tls"

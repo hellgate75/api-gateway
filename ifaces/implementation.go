@@ -1,8 +1,8 @@
 package ifaces
 
 import (
-	"api-gateway/model"
-	"api-gateway/service"
+	"github.com/hellgate75/api-gateway/model"
+	"github.com/hellgate75/api-gateway/service"
 	"log"
 	"sync"
 )

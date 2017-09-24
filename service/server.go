@@ -2,7 +2,7 @@ package service
 
 import (
 	"fmt"
-	"api-gateway/model"
+	"github.com/hellgate75/api-gateway/model"
 	"log"
 	"net/http"
 	"sync"
