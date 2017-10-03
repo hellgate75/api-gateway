@@ -336,7 +336,7 @@ You may obtain a copy of the License at
 
 [https://www.gnu.org/licenses/lgpl-3.0](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 
-You may also require copyright written authorization, contactacting creator at
+You may also require distribution or production use written authorization, contactacting creator at
 
 [Personal Email Address](mailto:hellgate75@gmail.com)
 
